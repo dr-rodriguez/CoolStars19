@@ -50,7 +50,7 @@ plt.savefig('coolstars19/figures/word_cloud.png')
 # Tweets per hour
 df = df.sort_index()
 
-rng = pd.date_range('2016-6-1', '2016-6-11 16:00:00', freq='H')
+rng = pd.date_range('2016-6-1', '2016-6-13 16:00:00', freq='H')
 counts = []
 for i in range(len(rng)-1):
     num = df['id'][rng[i]:rng[i+1]].count()
